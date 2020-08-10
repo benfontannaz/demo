@@ -1,1 +1,3 @@
-# consulting
+---
+permalink: /index.html
+---
