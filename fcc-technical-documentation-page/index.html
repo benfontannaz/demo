@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD 
+_________________________________________________________________________________ -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Fontannaz Benjamin" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>FCC: Technical Documentation Page - Vanta JS Documentation</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/> -->
+
+  <!-- SCRIPTS SOURCES -->
+  <script src="./js/three.min.js"></script>
+  <script src="./js/vanta.birds.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+  <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script> -->
+  
+  <!-- CSS Stylesheets 
+_________________________________________________________________________________ -->
+  <link rel="stylesheet" href="./css/prism.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+
+
+
+</head>
+
+<!-- BODY 
+_________________________________________________________________________________ -->
+
+<body>
+  <!-- partial:index.partial.html -->
+  <nav id="navbar">
+
+    <!-- HEADER - NAV
+  _________________________________________________________________________________ -->
+    <header class="nav-title">Vanta JS Documentation</header>
+    <ul >
+      <li><a class="nav-link" href="#What_is_Vanta">What is Vanta</a></li>
+      <li>
+        <a class="nav-link" href="#Basic_usage">Basic usage</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#More_options">More options</a>
+      </li>
+      <li><a class="nav-link" href="#Updating_options_after_init">Updating options after init</a></li>
+      <li><a class="nav-link" href="#Options_documentation">Options documentation</a></li>
+      <li><a class="nav-link" href="#Cleanup">Cleanup</a></li>
+      <li>
+        <a class="nav-link" href="#Usage_with_React">Usage with React</a>
+      </li>
+      <li><a class="nav-link" href="#Usage_with_React_Hooks">Usage with React Hooks</a></li>
+      <li><a class="nav-link" href="#Using_THREE_from_npm">Using THREE from npm</a></li>
+      <li><a class="nav-link" href="#Local_dev">Local dev</a></li>
+      <li><a class="nav-link" href="#Credits">Credits</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN
+  _________________________________________________________________________________ -->
+  <main id="main-doc">
+    <h1>Vanta JS</h1>
+    <h2>
+      <a href="https://www.vantajs.com/" target="_blank" rel="nofollow" class="intro-link">View demo gallery &amp; customize effects at www.vantajs.com →</a>
+    </h2>
+
+    <p>
+      <a href="https://www.vantajs.com" target="_blank" rel="nofollow" class="vantajs-a">
+        <div id="vantajs" class="vantajs-title">
+          <div class="vanta-div">
+            <p class="vanta-title">Vanta.js</p>
+            <p class="vanta-description">Animated website background in a few lines of code.</p>
+          </div>
+        </div>
+      </a>
+    </p>
+
+
+    <!-- Section - What is Vanta?
+    ________________________________________________________________  -->
+    <section class="main-section" id="What_is_Vanta">
+      <header>What is Vanta</header>
+      <article>
+        <ul>
+          <li><strong>Add 3D animated digital art to any webpage with just a few lines of code.</strong></li>
+          <li>How it works: Vanta inserts an animated effect as a background into any HTML element.</li>
+          <li>Works with vanilla JS, React, Angular, Vue, etc.</li>
+          <li>Effects are rendered by <a href="https://github.com/mrdoob/three.js/">three.js</a> (using WebGL) or <a
+              href="https://github.com/processing/p5.js">p5.js</a>.</li>
+          <li>Effects can interact with mouse/touch inputs.</li>
+          <li>Effect parameters (e.g. color) can be easily modified to match your brand.</li>
+          <li>Total additional filesize is ~120kb minified and gzipped (mostly
+            three.js), which is smaller than comparable background images/videos.</li>
+          <li>Vanta includes many pre-defined effects to try out. <em>More effects will be added soon!</em></li>
+        </ul>
+      </article>
+    </section>
+
+
+
+
+    <!-- Section - Basic usage:
+    ________________________________________________________________  -->
+    <section class="main-section" id="Basic_usage">
+      <header>Basic usage</header>
+      <hr>
+
+      <!-- <pre class="line-numbers language-markup">
+        <code class="code-snippet">
+&lt;script src="three.min.js"&gt;&lt;/script&gt;
+&lt;script src="vanta.waves.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  VANTA.WAVES('#my-background')
+&lt;/script&gt;
+        </code>
+      </pre>
+      <hr> -->
+
+      <!-- <script type="text/plain" class="language-markup">
+        <p>Example</p>
+        </script>
+
+        <hr> -->
+
+        <div class="code-div">
+          <pre class="line-numbers language-markup">
+            <code class="code-snippet"><!--
+  <script src="three.min.js"></script>
+  <script src="vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES('#my-background')
+  </script> 
+            --></code></pre> 
+        </div>
+
+
+
+
+      <p><a href="https://jsfiddle.net/xb74q5h1/" target="_blank" rel="nofollow">View fiddle →</a></p>
+
+    </section>
+
+
+
+
+    <!-- Section - More options:
+    ________________________________________________________________  -->
+
+    <section class="main-section" id="More_options">
+      <header>More options</header>
+      <hr>
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  VANTA.WAVES({
+    el: '#my-background', // element selector string or DOM object reference
+    color: 0x000000,
+    waveHeight: 20,
+    shininess: 50,
+    waveSpeed: 1.5,
+    zoom: 0.75
+  })
+          --></code></pre> 
+      </div>
+    </section>
+
+
+
+    <!-- Section - Options documentation:
+    ________________________________________________________________  -->
+    <section class="main-section" id="Options_documentation">
+      <header>Options documentation</header>
+      <hr>
+      <p><strong>el:</strong> The container element. The Vanta canvas will be appended as a child of this element, and will assume the width and height of this element. If you want a fullscreen canvas, make sure this container element is fullscreen. Note: This container <em>can</em> have other children. The other children will appear as foreground content, in front of the Vanta canvas.</p>
+
+      <p><strong>mouseControls:</strong> (defaults to <em>true</em>) Set to false to disable mouse controls. Only applies to certain effects.</p>
+
+      <p><strong>touchControls:</strong> (defaults to <em>true</em>) Set to false to disable touch controls. Only applies to certain effects.</p>
+
+      <p><strong>Effect params:</strong> Each effect has different parameters. Explore them all at <a href="http://www.vantajs.com/" target="_blank" rel="nofollow">www.vantajs.com</a>!</p>
+
+    </section>
+
+
+    <!-- Section - Updating options after init:
+    ________________________________________________________________  -->
+
+    <section class="main-section" id="Updating_options_after_init">
+      <header>Updating options after init</header>
+      <hr>
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  const effect = VANTA.WAVES({
+    el: '#my-background',
+    color: 0x000000
+  })
+  
+  // Later, when you want to update an animation in progress
+  effect.setOptions({
+    color: 0xff88cc
+  })
+          --></code></pre> 
+      </div>
+    </section>
+
+
+
+
+    <!-- Section - Cleanup:
+    ________________________________________________________________  -->
+    
+    <section class="main-section" id="Cleanup">
+      <header>Cleanup</header>
+      <hr>
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  const effect = VANTA.WAVES('#my-background')
+  effect.destroy() // e.g. call this in React's componentWillUnmount
+          --></code></pre> 
+      </div>
+    </section>
+
+
+
+    <!-- Section - Usage with React:
+    ________________________________________________________________  -->
+    
+    <section class="main-section" id="Usage_with_React">
+      <header>Usage with React</header>
+      <hr>
+      <p>
+        <code class="language-js">npm i vanta</code> , then import a specific effect as follows. Make sure <code class="language-js">three.js</code> or <code class="language-js">p5.js</code> has already been included via &lt;script&gt; tag.
+      </p>
+
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  import React from 'react'
+  import BIRDS from 'vanta/dist/vanta.birds.min'
+  // Make sure window.THREE is defined, e.g. by including 
+  // three.min.js in the document head using a <script> tag
+  
+  class MyComponent extends React.Component {
+    constructor() {
+      super()
+      this.vantaRef = React.createRef()
+    }
+    componentDidMount() {
+      this.vantaEffect = BIRDS({
+        el: this.vantaRef.current
+      })
+    }
+    componentWillUnmount() {
+      if (this.vantaEffect) this.vantaEffect.destroy()
+    }
+    render() {
+      return <div ref={this.vantaRef}>
+        Foreground content goes here
+      </div>
+    }
+  }
+          --></code></pre>
+      </div>
+        <p><a href="https://jsfiddle.net/tsrwxzyL/2/" target="_blank" rel="nofollow">View fiddle →</a></p>
+    </section>
+
+
+
+
+    <!-- Section - Usage with React Hooks (requires React 16.8):
+    ________________________________________________________________  -->
+    
+    <section class="main-section" id="Usage_with_React_Hooks">
+      <header>Usage with React Hooks</header>
+      <hr>
+
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  import React, { useState, useEffect, useRef } from 'react'
+  import BIRDS from 'vanta/dist/vanta.birds.min'
+  // Make sure window.THREE is defined, e.g. by including 
+  // three.min.js in the document head using a <script> tag
+  
+  const MyComponent = (props) => {
+    const [vantaEffect, setVantaEffect] = useState(0)
+    const myRef = useRef(null)
+    useEffect(() => {
+      if (!vantaEffect) {
+        setVantaEffect(BIRDS({
+          el: myRef.current
+        }))
+      }
+      return () => {
+        if (vantaEffect) vantaEffect.destroy()
+      }
+    }, [vantaEffect])
+    return <div ref={myRef}>
+      Foreground content goes here
+    </div>
+  }
+          --></code></pre>
+      </div>
+    </section>
+
+
+
+
+    <!-- Section - Using THREE from npm
+    ________________________________________________________________  -->
+    
+    <section class="main-section" id="Using_THREE_from_npm">
+      <header>Using THREE from npm</header>
+      <hr>
+      <p>
+        You can also import <code class="language-js">three.js</code> from npm, and pass it into the effect function.
+      </p>
+
+      <div class="code-div">
+        <pre class="line-numbers language-js">
+          <code class="code-snippet"><!--
+  import React from 'react'
+  import * as THREE from 'three'
+  import BIRDS from 'vanta/dist/vanta.birds.min'
+  
+  ...
+    componentDidMount() {
+      this.vantaEffect = BIRDS({
+        el: this.vantaRef.current,
+        THREE: THREE // use a custom THREE when initializing
+      })
+    }
+          --></code></pre>
+      </div>
+    </section>
+
+
+    <!-- Section - Local dev:
+    ________________________________________________________________  -->
+    
+    <section class="main-section" id="Local_dev">
+      <header>Local dev</header>
+      <hr>
+      <p>
+        Clone the repo, switch to the <code class="language-js">gallery</code> branch, run <code class="language-js">npm install</code> and <code class="language-js">npm run dev</code> , and go to localhost:8080.
+      </p>
+    </section>
+
+
+
+    <!-- Section - Local dev:
+    ________________________________________________________________  -->
+    <section class="main-section" id="Credits">
+      <header>Credits</header>
+      <hr>
+      <article>
+        <ul>
+          <li>
+            <p>General inspiration from <a href="https://www.shadertoy.com/" rel="nofollow">shadertoy.com</a>, <a
+                href="https://www.twitter.com/hashtag/generative" rel="nofollow">#generative</a>, <a
+                href="https://www.reddit.com/r/generative/" rel="nofollow">/r/generative</a>, <a
+                href="https://www.reddit.com/r/creativecoding/" rel="nofollow">/r/creativecoding</a>, etc</p>
+          </li>
+          <li>
+            <p>Birds effect from <a href="https://threejs.org/examples/?q=birds#webgl_gpgpu_birds"
+              target="_blank" rel="nofollow">https://threejs.org/examples/?q=birds#webgl_gpgpu_birds</a> by @zz85</p>
+          </li>
+          <li>
+            <p>Fog effect from <a href="https://thebookofshaders.com/13/"
+              target="_blank" rel="nofollow">https://thebookofshaders.com/13/</a> by @patriciogonzalezvivo</p>
+          </li>
+          <li>
+            <p>Clouds effect from <a href="https://www.shadertoy.com/view/XslGRr"
+              target="_blank" rel="nofollow">https://www.shadertoy.com/view/XslGRr</a> by Inigo Quilez</p>
+          </li>
+          <li>
+            <p>Clouds2 effect from <a href="https://www.shadertoy.com/view/lsBfDz"
+              target="_blank" rel="nofollow">https://www.shadertoy.com/view/lsBfDz</a> by Rune Stubbe</p>
+          </li>
+          <li>
+            <p>Trunk, Topology effects from <a href="http://generated.space/" target="_blank" rel="nofollow">http://generated.space/</a>
+              by Kjetil Midtgarden Golid @kgolid</p>
+          </li>
+          </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- SCRIPTS 
+  _________________________________________________________________________________ -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script> -->
+  <script src="./js/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
+
+
+<!-- ----------------------------------------------------------
+---------------- END OF CSS FILE ----------------
+----------------------------------------------------------- -->

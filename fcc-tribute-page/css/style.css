@@ -1,0 +1,447 @@
+/* Author: Benjamin Fontannaz */
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  padding: 0px;
+  text-align: center;
+}
+h2 {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding: 0px;
+  text-align: center;
+}
+h4 {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  padding: 0px;
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h6 {
+  margin: 0px 0px 3px 0px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.pre-title {
+  margin-bottom: 0px;
+  color: darkgray;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.tribute-title {
+  display: none;
+  margin-top: 0px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.tribute-title-image-div {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+.tribute-title-image {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div{
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+#main {
+  background-color: White;
+  color: rgb(0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+#tribute-link {
+  color: #0066CC;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+}
+
+.tribute-link {
+  margin-top: 70px;
+}
+
+#intro-title{
+  color: black;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 30px;
+  padding: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#tribute-info {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.intro{
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#image {
+width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+
+#img-caption {
+  color: grey;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding: 5px 0px;
+  text-align: left;
+  text-align: justify;
+
+}
+
+.img-div {
+  margin: 30px auto 30px auto;
+  max-width: 2000px;
+  justify-content: center;
+}
+
+#img-div {
+  max-width: 1089px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.float-div {
+  margin-right: 20%;
+  position: relative;
+}
+
+.float-div-r {
+  margin-left: 20%;
+  position: relative;
+}
+
+.floatleft {
+  float: left;
+  width: 40%;
+  /* background-color: #FF3333; */
+  color: grey;
+  margin: 0px 10px 5px 0px;
+}
+
+.floatright {
+  float: right;
+  width: 40%;
+  /* background-color: rgb(51, 255, 51); */
+  color: grey;
+  margin: 0px 0px 5px 10px;
+}
+
+.floatnone {
+  float: none;
+  /* background-color: yellow; */
+  color: grey;
+  text-align: justify;
+}
+
+
+.intro-div {
+  max-width: 1089px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top10-div {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.intro-float-left {
+  float: left;
+  width: 60%;
+  /* background-color: #FF3333; */
+  color: grey;
+  margin: 0px 10px 5px 0px;
+}
+
+.intro-float-right {
+  float: right;
+  width: 25%;
+  /* background-color: rgb(51, 255, 51); */
+  color: grey;
+  margin: 0px 0px 5px 10px;
+}
+
+.intro-float-none {
+  float: none;
+  /* background-color: yellow; */
+  color: grey;
+  text-align: justify;
+}
+
+.p-top {
+  margin: 0px 0px 5px 0px;
+  background-color: rgba(210, 209, 209, 0.173);
+  padding: 50px 20px 15vh 20px;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.image-top {
+  position: relative;
+  margin-top: 5px;
+}
+
+.iconic-title-a, .iconic-title-b {
+  display: none;
+}
+
+.iconic-title {
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.image-intro {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.img-caption {
+  font-size: 14px;
+  text-align: left; 
+  text-align: justify;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.top10-title-right {
+  text-align: justify;
+  text-align: right;
+  
+}
+
+.top10-title-left {
+  text-align: left;
+  text-align: justify;
+}
+
+.eames-logo {
+  position: absolute;
+  top: -4vh;
+  right: -4vw;
+  z-index: -5;
+  max-width: 15vw;
+}
+
+.eames-logo-top10-left {
+  position: absolute;
+  top: -1vh;
+  left: -3vw;
+  z-index: -5;
+  max-width: 7vw;
+}
+
+.eames-logo-top10-right {
+  position: absolute;
+  top: -1vh;
+  right: -3vw;
+  z-index: -5;
+  max-width: 7vw;
+}
+
+.image-intro-laugh {
+  margin-top: 10px;
+}
+
+/* Mobile-Portrait Medium-Large (max-width: 1000px)) */
+@media screen and (max-width: 1000px) {
+
+  .flex-div {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+}
+
+/* Mobile-Portrait Medium-Large (max-width: 700px) */
+@media screen and (max-width: 700px) {
+
+  .top10-title-right, .top10-title-left {
+    text-align: center;
+  }
+
+  .floatright {
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .floatleft {
+    float: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .float-div {
+    margin-right: 0%;
+    position: relative;
+  }
+  
+  .float-div-r {
+    margin-left: 0%;
+    position: relative;
+  }
+
+  .tribute-title {
+    font-size: 30px;
+  }
+
+  .pre-title {
+    font-size: 15px;
+  }
+
+  #intro-title {
+    text-align: justify;
+  }
+  
+
+  #intro-title, .iconic-title-a, .iconic-title-b {
+    font-size: 25px;
+    /* margin-top: 30px; */
+    margin-bottom: 5px;
+  }
+
+  .iconic-title {
+    display: none;
+    margin-top: 30px;
+  }
+
+  .iconic-title-a, .iconic-title-b {
+    display: block;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+
+  .iconic-title-a {
+    margin-bottom: 0px;
+  }
+
+  .iconic-title-b {
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h6 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+
+  #main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tribute-link {
+    margin-top: 35px;
+  }
+
+  .intro-float-left {
+    float: none;
+    width: 100%;
+    /* background-color: #FF3333; */
+    margin: 0px 0px 0px 0px;
+  }
+
+  .intro-float-right {
+    float: right;
+    width: 50%;
+  }
+
+  #img-caption {
+    font-size: 12px;
+  }
+
+  .img-caption {
+    font-size: 12px;
+  }
+
+  .eames-logo-top10-left, .eames-logo-top10-right {
+    top: -1vh;
+    right: 5vw;
+    z-index: -5;
+    max-width: 15vw;
+  }
+
+}
+
+/* Mobile-Portrait Medium-Large (max-width: 500px) */
+@media screen and (max-width: 500px) {
+
+  .intro-float-right {
+    float: none;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .image-intro {
+    width: 100%;
+  }
+
+
+  .eames-logo-top10-right {
+    top: -1vh;
+    right: 5vw;
+    z-index: -5;
+    max-width: 15vw;
+  }
+
+  .eames-logo-top10-left {
+    top: -1vh;
+    right: 5vw;
+    z-index: -5;
+    max-width: 15vw;
+  }
+
+
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- head - Charset - Title - Googlefonts links - CSS links -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Fontannaz Benjamin" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Build a Survey Form - Responsive Web Design Projects</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/backgroundMove.js"></script>
+
+  <script> </script>
+</head>
+
+<!-- Body -->
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Who is the NBA GOAT player?</h1>
+    <p id="description" class="description text-center">
+      <u><b>Note:</b></u> Form to be completed by people of at leat 6 years old
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name or Pseudo</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="8"
+        max="120"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What option best describes your profile?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select profile type</option>
+        <option value="enthusiast">NBA Basketball Enthusiast&nbsp;&nbsp;<span class="clue">(Watch several games per years)</span></option>
+        <option value="supporter">NBA Basketball Team Supporter&nbsp;&nbsp;<span class="clue">(Follow all year long a team)</span></option>
+        <option value="fan">NBA Basketball Die Hard Fan&nbsp;&nbsp;<span class="clue">(Watch multiple games per week and play-offs)</span></option>
+        <option value="employee">NBA Basketball Employee</option>
+        <option value="coach">NBA Basketball Coach</option>
+        <option value="player">NBA Basketball Player</option>
+      </select>
+    </div>
+
+      <!-- ------------------Radio Buttons-------------------------------- -->
+      <div class="form-group">
+      <label for="Gender">Gender</label>
+        <p>
+        <input type="radio" name="gender" value="male" checked> Male &nbsp;&nbsp;
+        <input type="radio" name="gender" value="female"> Female
+      </p>
+    </div>
+    <div class="form-group">
+      <p>
+        Who is the Greatest NBA Player of All Time?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="BobCousy">Bob Cousy, (1950–1963), (1969–1970)</option>
+        <option value="BillRussell">Bill Russell, (1956–1969)</option>
+        <option value="WiltChamberlain">Wilt Chamberlain, (1959–1973)</option>
+        <option value="JerryWest">Jerry West, (1960–1974)</option>
+        <option value="OscarRobertson">Oscar Robertson, (1960–1974)</option>
+        <option value="KareemAbdulJabbar">Kareem Abdul-Jabbar, (1969–1989)</option>
+        <option value="PeteMaravich">Pete Maravich, (1970–1980)</option>
+        <option value="JuliusErving">Julius Erving, (1971–1987)</option>         
+        <option value="LarryBird">Larry Bird, (1979–1992)</option>
+        <option value="MagicJohnson">Magic Johnson, (1979–1991), (1996)</option>
+        <option value="MichaelJordan">Michael Jordan, (1984–1993), (1995–1998), (2001–2003)</option>
+        <option value="KobeBryant">Kobe Bryant, (1996–2016)</option>        
+        <option value="LebronJames">Lebron James, (2003–present)</option>
+        <option value="ChrisPaul">Chris Paul, (2005–present)</option> 
+        <option value="KevinDurant">Kevin Durant, (2007–present)</option>
+        <option value="StephCurry">Steph Curry, (2009–present)</option>
+        <option value="JamesHarden">James Harden, (2009–present)</option>
+        <option value="KawhiLeonard">Kawhi Leonard, (2011–present)</option>
+        <option value="KlayThompson">Klay Thompson, (2011–present)</option>
+        <option value="GiannisAntetokounmpo">Giannis Antetokounmpo, (2012–present)</option>
+        <option value="AnthonyDavis">Anthony Davis, (2012–present)</option>
+        <option value="ZionWilliamson">Zion Williamson, (2019–present)</option>
+        <option value="None">No one from the List</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>
+        What are your preferred basketball moves?
+        <span class="clue">(Choose up to 3)</span>
+      </p>
+      <d class="basket-moves">
+      <label
+        ><input
+          name="prefer"
+          value="FadeawayJumpers"
+          type="checkbox"
+          class="input-checkbox"
+        />Fadeaway Jumpers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="FloaterShots"
+          type="checkbox"
+          class="input-checkbox"
+        />Floater Shoots</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="3PointShoots"
+          type="checkbox"
+          class="input-checkbox"
+        />3-Point Shoots</label
+      >      
+      <label>
+        <input
+          name="prefer"
+          value="PutbackDunks"
+          type="checkbox"
+          class="input-checkbox"
+        />Putback Dunks</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="AlleyOops"
+          type="checkbox"
+          class="input-checkbox"
+        />Alley-Oops</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="PosterDunks"
+          type="checkbox"
+          class="input-checkbox"
+        />Poster Dunks</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="PosterDunks"
+          type="checkbox"
+          class="input-checkbox"
+        />Crossovers</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Assists"
+          type="checkbox"
+          class="input-checkbox"
+        />Assists</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Rebounds"
+          type="checkbox"
+          class="input-checkbox"
+        />Rebounds</label
+      >  
+      <label
+        ><input
+          name="prefer"
+          value="Steals"
+          type="checkbox"
+          class="input-checkbox"
+        />Steals</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Charges"
+          type="checkbox"
+          class="input-checkbox"
+        />Charges</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Blocks"
+          type="checkbox"
+          class="input-checkbox"
+        />Blocks</label
+      >
+      </d>
+    </div>
+    <div class="form-group">
+      <p>Any comments or suggestions for additional moves or missing players?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Scripts -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/backgroundMove.js"></script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

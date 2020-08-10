@@ -1,0 +1,362 @@
+
+html {
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  width: 98%;
+}
+
+body {
+  min-width: 230px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  width: 76%;
+  margin-right: 10px;
+  margin-left: 230px;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+
+/* -- Vanta JS Hero 
+________________________________________________________________  */
+
+
+.vantajs-a {
+  text-decoration: none;
+}
+
+#vantajs {
+  height: 40vh;
+  width: 100%;
+}
+
+.vantajs-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vanta-div {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+
+.vanta-title {
+  text-align: left;
+  font-size: 4vw;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  line-height: 4rem;
+}
+
+.vanta-description {
+  text-align: left;
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.372);
+  margin: 0px 0px;
+  padding: 0px 0px;
+
+}
+
+
+/* -- Navbar
+________________________________________________________________  */
+
+#navbar {
+  position: fixed;
+  width: 230px;
+  top: 0px;
+  left: 0px;
+  /* width: 300px; */
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  z-index: 1;
+  background-color: lightgrey;
+}
+
+.nav-title {
+  text-align: left;
+  padding: 10px 15px;
+  margin: 0px 0px;
+  
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0px;
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 15px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -- MAIN 
+________________________________________________________________  */
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#main-doc {
+  /* position: absolute; */
+  /* margin-left: 310px; */
+  /* margin-right: auto; */
+  padding: 20px;
+  margin-bottom: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 94%;
+  z-index: 0;
+}
+
+/* -- SECTIONS 
+________________________________________________________________  */
+
+.main-section {
+  margin: 30px 0px 30px 0px;
+  width: 100%;
+  padding: 0px auto 0px auto;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+p > a {
+  text-decoration: none;
+}
+
+/* -- Pre and Code 
+________________________________________________________________  */
+
+.code-div {
+  width: 96.5%;
+}
+
+.code-snippet {
+  display: block;
+  position: relative;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+  padding: 15px;
+  /* margin: 10px; */
+  border-radius: 5px;
+  line-height: 2;  
+  margin: 0 0;
+  padding: 0 0;
+  
+}
+
+pre {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  width: 93%;
+
+}
+
+/* -- MEDIA QUERY screen (max-width: 900px)
+________________________________________________________________  */
+
+@media only screen and (max-width: 900px) {
+  /* For tablets and mobile phones: */
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .intro-link {
+    font-size: 1.3rem;
+  }
+
+  #navbar ul {
+    border: 1px solid;
+    height: 80px;
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+
+  #navbar {
+    flex: 2;
+    height: 129px;
+    background-color: lightgray;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 80px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  .nav-title {
+    display: none;
+    font-size: 1.8rem;
+    margin: 5px 5px;
+    text-align: center;
+  }
+
+  #main-doc {
+    flex: 1;
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+
+  section {
+    margin: 0px 0 0px auto;
+    padding: 90px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .code-div {
+    width: 86vw;
+  }
+  
+  .main-section > article > ul {
+    padding-left: 0px;
+  }
+
+  .vanta-title {
+    font-size: 5vw;
+    line-height: 3rem;
+  }
+  
+  .vanta-description {
+    font-size: 3vw;
+  
+  }
+
+}
+
+/* -- MEDIA QUERY screen (max-width: 600px)
+________________________________________________________________  */
+
+@media only screen and (max-width: 600px) {
+  .code-div {
+    width: 80vw;
+  }
+
+}
+
+
+
+/* -- MEDIA QUERY screen (max-width: 400px)
+________________________________________________________________  */
+
+@media only screen and (max-width: 400px) {
+
+  .intro-link {
+    font-size: 1.2rem;
+  }
+
+  #main-doc {
+    margin-left: 0px;
+    top: 70px;
+  }
+
+  .nav-title {
+    display: none;
+    font-size: 7vw;
+    text-align: left;
+  }
+
+  #navbar {
+    flex: 2;
+    height: 40px;
+    background-color: lightgray;
+    min-width: 290px;
+  }
+
+  #navbar ul {
+    height: 40px;
+    background-color: lightgray;
+  }
+
+  section {
+    margin: 0px auto 0px auto;
+    padding: 50px 0px 0px 0px;
+    width: 100%;
+  }
+
+  code {
+    margin-left: 0px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+
+  .code-div {
+    width: 76vw;
+  }
+
+  #vantajs {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .vanta-title {
+    font-size: 8vw;
+    line-height: 3rem;
+  }
+  
+  .vanta-description {
+    font-size: 3vw;
+  
+  }
+
+}
+
+
+
+/* ________________________________________________________________
+
+---------------- END OF CSS FILE ----------------
+________________________________________________________________  */

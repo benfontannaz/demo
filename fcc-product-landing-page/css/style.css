@@ -1,0 +1,887 @@
+/* RESET RULES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+  --lightblue: #f6f9fc;
+  --blue: #404DB5;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.68);
+  z-index: 10;
+}
+
+nav-link:hover {
+  color: white;
+  z-index: 10;
+}
+
+.bg-lightblue {
+  background: var(--lightblue);
+}
+
+.bg-blue {
+  background: var(--blue);
+  opacity: 0.5;
+}
+
+.bg-blue:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+	transition: background-color 1s;
+	
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.container-fluid-nav {
+  max-width: 100%;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-contact > a  {
+  color: rgba(255, 255, 255, 0.66);
+  text-decoration: none;
+}
+
+.header-contact > a:hover  {
+  color: rgb(255, 255, 255);
+}
+
+/* -- HEADER --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container-fluid-title {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.fluid-title {
+  top: 40%;
+}
+
+.fluid-btn {
+  top: 45%;
+}
+
+.title-btn {
+   margin-left: auto;
+   margin-right: auto;
+	 z-index: 99;
+}
+
+.btn1, .btn2 {
+  margin: 0px 20px;
+  width: 140px;
+  background-color: blue;
+}
+
+.title-text {
+  font-size: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  color:rgba(255, 255, 255, 0.776);
+  z-index: 500;
+
+}
+
+.title-text-fly {
+  font-size: 7rem;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgba(29, 29, 211, 0.673);
+}
+
+.cover {
+  background: no-repeat center/cover;
+  height: 70%;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.logo {
+  width: 85px;
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+} 
+
+h1 {
+	text-align: center;
+	align-items: center;
+}
+
+
+/* -- SECTION 01 - VIDEO --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-video {
+  width: 80%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-drag {
+  display: flex;
+  flex-direction: row; 
+  width: 100%; 
+  height: auto; 
+  background-color: blue; 
+  overflow: hidden;
+	
+}
+
+.blue {
+	color: blue;
+}
+
+#home {
+  background-image: url(../images/Carlos-Serrao_Jordan-Kawhi-Leonard_03-1600x831.jpg);
+  z-index: -5;
+}
+
+
+/* -- SECTION 02 - GRID1 --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-grid1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** 2x3 Image 1rst Container **/
+.container1 {
+  width: 100%;
+  height: 40vw;
+  background: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 0.9fr;
+  grid-template-areas:   
+      "content1"
+      "content2";
+  grid-gap: 1vh;
+  margin-top: 1vh;
+}
+
+
+/* -- SECTION 03 - ICONIC TEXT --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-iconic {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commemorate {
+  /* display: block;
+  position: relative; */
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-left: 0vh;
+  margin-right: 0vh;
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+#often{
+	text-align: center;
+  font-size: 1.85rem;
+	color: blue;
+}
+
+
+
+/* -- SECTION 04 - GRID2 --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-grid2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1vh;
+}
+
+/** 3x2 Image 2nd Container **/
+.container2 {
+  width: 100%;
+  height: 45vw;
+  background: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 1.4fr;
+  grid-template-areas:
+    "content3"
+    "content4";
+  grid-gap: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+
+/** 3x2 Image 2nd Container **/
+.container-retro {
+  width: 100%;
+  height: 60vw;
+  background-color: rgba(206, 204, 204, 0.372);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "content5 content6"
+    "content7 content8";
+}
+
+
+.content5 {
+	grid-area: content5;
+	display: block;
+	position: relative;
+	margin-left: 3vw;
+	margin-right: 3vw;
+  align-self: center;
+}
+
+
+.content6 {
+  background-image: url(../images/SU17_JD_FlightGuy_AJI_Primary_native_1600.jpg);
+	grid-area: content6;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.content7 {
+  background-image: url(../images/SU17_JD_FlightGuy_AJXXXI_Primary_native_1600.jpg);
+	grid-area: content7;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.content8 {
+	grid-area: content8;
+	display: block;
+	position: relative;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	align-self: center;
+}
+
+
+/* -- SECTION 05 - Shoes Retro SQUARE --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-retro {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+
+.retro-para {
+  text-align: justify;
+  font-size: 1rem;
+  margin: 0px 0px;
+}
+
+
+.shoebox-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.shoebox {
+  height: 25vw;
+  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0vh 0vh 0vh 0vh;
+}
+
+.shoe-box1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(121, 121, 121, 0.249);
+  padding: 2vw;
+  order: 1;
+  
+}
+.shoe-box2 {
+  background-color: rgba(121, 121, 121, 0.906);
+  background-image: url(../images/SU17_JD_FlightGuy_AJI_Primary_native_1600.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  order: 1;
+}
+
+.shoe-box3 {
+  background-color: rgba(121, 121, 121, 0.906);
+  background-image: url(../images/SU17_JD_FlightGuy_AJXXXI_Primary_native_1600.jpg);
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  order: 1;
+}
+
+.shoe-box4 {
+  display: flex;
+  align-items: center;
+	background-color: rgba(121, 121, 121, 0.249);
+  padding: 2vw;
+  order: 1;
+}
+
+
+#button1 {
+  margin-top: 2vw;
+  text-align: center; 
+}
+
+#button2 {
+  margin-top: 2vw;
+	text-align: center;
+}
+
+.button1, .button2 {
+  background-color: blue;
+}
+
+.item1 {
+  background: 0;
+  grid-area: content1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh 1vh;
+}
+
+.item2 {
+  grid-area: content2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vh 1vh;
+}
+
+.item3 {
+  background: 0;
+  grid-area: content3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vh 1vh;
+}
+
+.item4 {
+  grid-area: content4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh 1vh;
+}
+
+.Pic1 {
+  background-image: url(../images/Grid1-Pic1-Helmet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic2 {
+  background-image: url(../images/Grid1-Pic2-Zero-Drag.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic3 {
+  background-image: url(../images/Grid1-Pic3-Feet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic4 {
+  background-image: url(../images/Grid1-Pic4-Ball.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic5 {
+  background-image: url(../images/Grid1-Pic5-Helmet-Empty.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic6 {
+  background-image: url(../images/Grid2-Pic6-Shoe-Heel.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic7 {
+    background-image: url(../images/Grid2-Pic7-Shoe-Laces.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic8 {
+  background-image: url(../images/Grid2-Pic8-Shoe-Laces.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic9 {
+  background-image: url(../images/Grid2-Pic9-Jump-Elevation.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Pic10 {
+  background-image: url(../images/Grid2-Pic10-Logo-Clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/* -- SECTION 07 Products Pricing CARDS --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#pricing {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* width: calc(90% / 3); */
+  width: 310px;
+  height: 550px;
+  margin: 0px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  max-width: 150%;
+  max-height: 150%;
+  display: block; /* remove extra space below image */
+  background: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: scale(1.3);
+  margin: 0px 0px;
+}
+
+.img-card-banned {
+  transform: scale(1);
+}
+
+.product-img:hover {
+  background-size: 150% 150%;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: yellow;
+  background: no-repeat;
+  background-position: center;
+  background-size: 300% 300%;
+  
+}
+
+.img-card2 {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: yellow;
+  display: block; /* remove extra space below image */
+  background-image: image("../images/SU17_JD_FlightGuy_AJI_Primary_native_1600.jpg"); 
+  background: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+.card-details {
+  height: 140px;
+  max-height: 200px;
+  text-align: left;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 10px;
+}
+
+.product > div > ul, p {
+  margin: 5px 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.product > div > p {
+  margin-bottom: 15px;
+}
+
+.product > div > ul {
+  padding-left: 6vw;
+}
+
+.product > div > ul > li {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.product > button {
+  width: 120px;
+  border: 0;
+  margin: 15px 0;
+  background-color: blue;
+  font-weight: 400;
+  color: white;
+}
+
+
+/* -- SECTION 08 FORM --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.section-form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+.button-form {
+  color: white;
+}
+
+
+
+/* -- SECTION 09 Footer --
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  background-color: var(--blue);
+  padding: 1vh 1vw;
+}
+
+.footer-child {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.footer-child > a  {
+  color: rgba(255, 255, 255, 0.66);
+  text-decoration: none;
+}
+
+.footer-child > a:hover  {
+  color: rgb(255, 255, 255);
+}
+
+.f-phone {
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
+.f-email {
+  margin-left: 1vw;
+  margin-right: auto;
+}
+
+.footer-contact {
+text-align: center;
+margin-left: 4px;
+}
+
+.far, .fas {
+  margin-right: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* MEDIA QUERY - max-width: 1200px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 1200px) {
+  .product {
+    width: 23vw;
+    height: 37vw;
+  }
+  .card-details {
+    height: auto;
+  }
+  .product > div > p {
+    display: none;
+  }
+
+  .product > div > ul {
+    padding-left: 0vw;
+  }
+
+  .product > div > ul, p {
+    margin: 5px 5px;
+  }
+
+  .product > .level {
+    font-size: 1.7vw;
+  }
+
+  .product > .level {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* MEDIA QUERY - max-width: 1100px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 1100px) {
+
+  #pricing {
+    margin-top: 0px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .shoebox {
+    height: 25vw;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0.5vh 0vh 0.5vh 0vh;
+  }
+
+  .shoe-box2 {
+    order: 0;
+  }
+
+  .shoe-box2, .shoe-box3 {
+    margin-top: 2vh;
+    background-position: center center;
+  }
+
+  .shoe-box1, .shoe-box4 {
+    height: auto;
+    background-color: #DDDDDD;
+  }
+
+  .title-text {
+    font-size: 3rem;
+  }
+  
+  .title-text-fly {
+    font-size: 5rem;
+  }
+
+
+}
+
+/* MEDIA QUERY - max-width: 992px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 992px) {
+  #pricing {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: auto;
+    flex-direction: unset;
+    justify-content: unset;
+    flex-wrap: unset;
+
+  }
+  .product {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+}
+
+
+
+/* SCROLL ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.scroll .page-header {
+  background: var(--blue);
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header {
+  transition: background 0.5s ease-in-out;
+}
+
+.page-header .navbar {
+  padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+  /* the variable is inherited from BS4 built-in variables */
+  border-color: var(--white); 
+}
+
+
+/* PAGE FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.footer-child {
+  text-align: center;
+}
+
+
+/* MEDIA QUERY - max-width: 991px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* MEDIUM SCREENS */
+
+@media screen and (max-width: 991px) {
+  .page-header {
+    background: var(--blue);
+  }
+		.media {
+		max-height: 52vw;
+	}
+}
+
+
+/* MEDIA QUERY - max-width: 650px
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* SMALL SCREENS */
+
+@media screen and (max-width: 650px) {
+  .page-footer .footer-child {
+    text-align: center;
+  }
+  
+  .media {
+		max-height: 350px;
+  }
+  
+  .fluid-title {
+    top: 13%;
+  }
+  
+  .fluid-btn {
+    top: 20%;
+  }
+
+  .title-text {
+    font-size: 1.7rem;
+    font-style: italic;
+    margin-bottom: 23vh;
+    text-align: right;
+    margin-right: 5vw;
+  }
+  
+  .title-text-fly {
+    font-size: 3.5rem;
+    color: rgba(0, 0, 255, 0.769);
+  }
+
+  .btn1, .btn2 {
+    margin: 0px 0px;
+    width: 120px;
+    background-color: blue;
+  }
+
+  .button1, .button2 {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+  }
+
+  .section-video, .section-grid1, .section-grid2, .section-retro {
+    width: 100%;
+  }
+
+  .shoe-box2, .shoe-box3 {
+    height: 25vh;
+    /* margin-top: 2vh; */
+    background-position: center center;
+    /* margin-bottom: 0px; */
+    margin: 2vh 1vh 0vh 1vh;
+  }
+
+  .shoe-box1, .shoe-box4 {
+    margin-top: 0px;
+    background-color: white;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+
+
+}
+
+
+/* END of CSS FILE
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
