@@ -1,0 +1,63 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet Portait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]:  is where our normal sryles apply
+1800px + :      Big Desktop
+
+*/
+
+// @mixin respond-phone {
+//     @media (max-width: 37.5em) { @content };
+// }
+
+
+/*
+$breakpoint argument choices:
+- phone         600px   =   37.5em    
+- tab-port      900px   =   56.25em
+- tab-land      1200px  =   75em
+- big-desk      1800px  =   112.5em
+
+"em" measurement unit have been indicated by experts as the best to use for media queries as Safari does not support px in media queries properly
+-> 1em = 16px or px / 16 = em
+
+ORDER:  01 Base + Typography > 02 General Layout + Grid > 03 Page Layout > 04 Components
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };
+    }
+
+    @if $breakpoint == big-desk {
+        @media only screen and (min-width: 112.5em) { @content };
+    }
+
+}
